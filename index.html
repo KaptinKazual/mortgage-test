@@ -286,10 +286,7 @@ function calculatePITI() {
   const annualRate = Math.max(0, parseFloat(document.getElementById('interestRate').value) || 0);
   const annualIns = Math.max(0, parseFloat(document.getElementById('annualInsurance').value) || 0);
   const selectedZip = document.getElementById('zipSelector').value;
-<!-- The Disclosure Blurb -->
-  <div style="font-size: 11px; color: #9ca3af; margin-top: 10px; line-height: 1.4; font-weight: 400; border-top: 1px solid #374151; padding-top: 8px;">
-    *This application is for esimation only. The results of this calculation are not intended to represent what your actual or firm PITI will be, only to provide a probable range based on information provided by the user.  Only your homebuying team can provide you the most accurate mortgage payment you can expect to pay. 
-  </div>
+
   // ALSO: Visually reset the text boxes to 0 if a user manually typed a negative
   ['homePrice', 'downPayment', 'interestRate', 'annualInsurance'].forEach(id => {
     const el = document.getElementById(id);
